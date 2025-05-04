@@ -32,7 +32,8 @@ Original call volume data is proprietary and not included. The model was trained
 * `week_number`: ISO week number (1–52)
 * `month`: Calendar month (1–12)
 * `monthly_sum`: Total call volume for the current month (smoothing/trend feature)
-
+  
+Note: The implementation in the provided notebooks utilizes standard US public holidays (e.g., Thanksgiving, Christmas Day for Holiday_A) as concrete examples for these feature flags.
 The data was normalized using `MinMaxScaler`, and sequences were generated with a 30-day sliding window.
 
 ## Model Architecture
